@@ -1,4 +1,4 @@
-import { ADD_ONE, APPLY_NUMBER, CHANGE_OPERATION, CLEAR_DISPLAY, MEM_R, M_PLUS, M_R, MEM_C } from './../actions';
+import { ADD_ONE, APPLY_NUMBER, CHANGE_OPERATION, CLEAR_DISPLAY, MEM_R, M_PLUS, MEM_C } from './../actions';
 
 export const initialState = {
     total: 0,
@@ -14,6 +14,8 @@ const calculateResult = (num1, num2, operation) => {
             return num1 * num2;
         case("-"):
             return num1 - num2;
+        case("÷"):
+            return num1 / num2;
     }
 }
 

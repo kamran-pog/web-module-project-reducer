@@ -83,6 +83,7 @@ function App() {
             </div>
 
             <div className="row ce_button">
+              <CalcButton onClick={() => eventHandleOp("÷")}value={"÷"}/>
               <CalcButton onClick={() => eventHandleCe()}value={"CE"}/>
             </div>
 
